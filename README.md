@@ -1,4 +1,4 @@
-# A/B Test of Job Descriptions Using Personas and LLMs
+# A/B Test Using Personas and LLMs
 
 ## Table of Contents
 - [Introduction and Project Description](#introduction-and-project-description)
@@ -19,15 +19,13 @@
 
 ## Introduction and Project Description
 
-In the evolving landscape of talent acquisition and job design, the utilization of advanced computational techniques, including Large Language Models (LLMs) and persona-based evaluation methods, allows for new approaches to optimizing job descriptions for various roles. This innovative methodology involves the creation of detailed personas, which encapsulate a wide range of candidate profiles, preferences, and competencies. These personas are then used in combinations with LLMs to assess and vote on job positions, determining which descriptions are more effective in attracting the right talent.
-
-This project allows fast and extensive comparison of job descriptions by A/B testing means using generated personas in combination with LLMs.
+This project demonstates fast and extensive comparison and evaluation possibilities of two sets of content by A/B testing means using generated personas in combination with LLMs. As an example job descriptions are used and as personas, gratuates of different fields of study are created. Of course, the scope of such comparisons is not limited to job descriptions. With slight modifications, images such as landing sites can be compared quite easily, e.g. using GPT Vision.
 
 ## Getting Started
 
 ### Prerequisites
 
-Before you can run this project, you'll need to have the following installed on your system:
+Before you can run the demonstration notebook `01_personas_and_AB_test.ipynb` of this project, you'll need to have the following installed on your system:
 
 - Python 3.9.12: Ensure you have Python version 3.9.12 installed. You can download it from [python.org](https://www.python.org/downloads/release/python-3912/) or use a version manager to install this specific version.
 
@@ -47,37 +45,37 @@ Additionally, you'll need an API key from OpenAI to use their models:
    
 2. **Create a Virtual Environment (Optional):**
 
-It's recommended to create a virtual environment to manage the dependencies for the project. You can create one using `venv` by running:
+  It's recommended to create a virtual environment to manage the dependencies for the project. You can create one using `venv` by running:
 
-```bash
-python3 -m venv env
-source env/bin/activate  # On Windows, use `env\Scripts\activate`
-```
+  ```bash
+  python3 -m venv env
+  source env/bin/activate  # On Windows, use `env\Scripts\activate`
+  ```
 
 3. **Install Required Packages:**
 
-Install all the required packages using the pip command. Make sure you are in the project directory and run:
-
-```bash
-pip install pandas numpy requests matplotlib statsmodels
-```
+  Install all the required packages using the pip command. Make sure you are in the project directory and run:
+  
+  ```bash
+  pip install pandas numpy requests matplotlib statsmodels
+  ```
 
 4. **Set Up OpenAI API Key:**
 
-Create a file named `config.py` in the root of the project directory. Add your OpenAI API key to this file as shown below:
+  Create a file named `config.py` in the root of the project directory. Add your OpenAI API key to this file as shown below:
+  
+  ```python
+  api_key = 'your_private_api_key_from_openai'
+  ```
 
-```python
-api_key = 'your_private_api_key_from_openai'
-```
-
-Replace 'your_private_api_key_from_openai' with the actual API key you obtained from OpenAI.
+  Replace 'your_private_api_key_from_openai' with the actual API key you obtained from OpenAI.
 
 5. **Verification:**
 
-Ensure that all installations are correct and packages are working as expected. You can run a simple Python script to check if the packages are imported correctly.
-
+  Ensure that all installations are correct and packages are working as expected. You can run a simple Python script to check if the packages are imported correctly.
+  
 Once you've completed these steps, you're ready do use the jupyter notebook `01_personas_and_AB_test.ipynb` which is an example how to perform the A/B testing.
-
+  
 
 ## Usage
 
@@ -103,6 +101,7 @@ Example job descriptions are defined in the jupyter notebook `01_personas_and_AB
 ### Prompting and Testing with LLMs
 Once personas and job descriptions are established, the next step involves interacting with LLMs to simulate how each persona would react to the job descriptions. This involves crafting prompts that summarize the job descriptions and the persona's profile, querying the LLM for its preference or reaction towards the descriptions.
 
+The function `get_prompt()` creates a prompt that will be used to get votes for either item `A` or `B` using LLMs.
 
 ### Creating a Survey
 
