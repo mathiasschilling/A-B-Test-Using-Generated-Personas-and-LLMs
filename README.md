@@ -1,131 +1,5 @@
 # A/B Test of Job Descriptions Using Personas and LLMs
 
-## Project Description
-
-In the evolving landscape of talent acquisition and job design, the utilization of advanced computational techniques, including Large Language Models (LLMs) and persona-based evaluation methods, represents a cutting-edge approach to optimizing job descriptions for various roles. This innovative methodology involves the creation of detailed personas, which encapsulate a wide range of candidate profiles, preferences, and competencies. These personas are then used in combination with LLMs to assess and vote on job positions, determining which descriptions are more effective in attracting the right talent.
-
-## Creating Personas
-
-To create 100 personas of students from 5 fields of study (machine technology, electronics engineering, data science, information technology, and industrial engineering), we follow these steps:
-
-- Assign each student a name.
-- Define their field of study (`study`) and associated skills (`skills`).
-- Link professional interests (`professional_interests`) to their fields of study and skills.
-- Introduce variability in skills and interests to create diverse personas.
-- Randomize private interests (`private_interests`) and social skills (`social_skills`) for each persona.
-
-This approach ensures the creation of unique personas for our A/B testing.
-
-## Job Descriptions
-
-Enter your job descriptions below:
-
-- `job_description_A`: Control job description (currently used).
-- `job_description_B`: New phrasing of the job position for comparison.
-
-## Prompting
-
-To verify the setup:
-
-1. Create a first prompt and ensure correctness.
-2. Test for the correct output using the OpenAI API.
-
-In case no OpenAI API is found, create a `config.py` file with your OpenAI private API key:
-
-```python
-api_key = 'your_private_api_key_from_openai'
-```
-
-## Create Survey Based on Personas
-
-We will gather votes from every persona in the dataset (100 in total). This process may take some time.
-
-## Illustrate Votes by Studies
-
-Analyze how different fields of study voted to identify any differences or trends.
-
-## Evaluation of the A/B-Test
-
-We use the proportions_ztest from the statsmodels package for the A/B test to determine if job description B is significantly better than A based on total votes.
-
-### Interpretation of the Results
-
-Z-statistic and p-value are key metrics for understanding the statistical significance of the test results, with a p-value less than 0.05 indicating a statistically significant difference.
-
-
-## Additional Remarks
-
-The A/B test can be run multiple times with the same personas to identify vote distributions for each persona, enhancing the depth of analysis.
-
-
-
-
-
-
-
-
-# A/B test of job offers using personas and LLM's
-
-## Project description
-
-
-## Creating personas
-
-
-## Job descriptions
-The following are two job descriptions for a "C++ firmware developer" position at a tech company. The first one (`job_description_A`) is the original one that is currently used by the company. The second one (`job_description_B`) is a modified one that uses more engaging and inclusive language.
-
-`job_description_A`:
-
-C++ Firmware Developer for Embedded Systems (m/f/d) 80-100%
-
-Your Responsibilities:
-You will develop embedded software for our innovative and modular microcontroller platform used in our instruments.
-You will work across technologies to develop firmware components and products in collaboration with colleagues from hardware and other departments.
-You will participate in all project phases, from requirements gathering to the release for mass production.
-
-Your Profile:
-You have completed a Bachelor's or Master's degree in Electrical Engineering or Computer Science.
-Your track record includes solid knowledge and several years of experience in object-oriented programming.
-You are characterized by your proactive and curious work attitude, as well as your enthusiasm for complex technical challenges.
-You have good proficiency in both German and English.
-
-What We Offer:
-Highly diverse and responsible projects in a dynamic and future-oriented high-tech company.
-Integration into an environment filled with experience and passion.
-Work in international project teams.
-Top-notch infrastructure, including state-of-the-art tools, fitness and relaxation rooms, and a staff restaurant.
-Opportunities for internal and external training.
-Attractive social benefits.
-
-`job_description_B`:
-
-C++ Firmware Developer for Embedded Systems (m/f/d) 80-100%
-
-Your Responsibilities:
-Engage in the agile development of embedded software for our cutting-edge microcontroller platform, driving innovation in our instruments.
-Collaborate in a fast-paced environment to create firmware components and products, leveraging cross-functional teamwork with hardware and other departments.
-Be an active player throughout the project lifecycle, embracing adaptability from initial concept to production readiness, in our quest to continuously deliver excellence.
-
-Your Profile:
-Whether you hold a degree in Electrical Engineering, Computer Science, or possess equivalent practical experience, we value diverse educational backgrounds.
-A foundation in object-oriented programming is essential, but your passion for technology, problem-solving skills, and eagerness to learn are what truly set you apart.
-Your proactive attitude, curiosity, and love for tackling complex challenges will make you a perfect fit. Being a team player is key.
-Proficiency in German and English is needed to collaborate effectively in our international teams.
-
-What We Offer:
-Work on highly diverse and challenging projects in an agile and forward-thinking high-tech company.
-Be part of an enthusiastic environment that values experience and passion for technology.
-Collaborate with international teams in a fast-paced setting that encourages quick learning and agile responses to change.
-Enjoy access to top-notch facilities, including the latest tech tools, fitness and relaxation areas, and a company restaurant, all designed to support your well-being.
-Take advantage of extensive opportunities for both internal and external training to help you grow professionally.
-Benefit from attractive social benefits and a culture that supports work-life balance and personal development.
-
-
-
-
-# Project Title: A/B Test of Job Offers Using Personas and LLMs
-
 ## Table of Contents
 - [Introduction and Project Description](#introduction-and-project-description)
 - [Getting Started](#getting-started)
@@ -165,7 +39,7 @@ Additionally, you'll need an API key from OpenAI to use their models:
    Start by cloning this project to your local machine. You can do this by running the following command in your terminal:
 
    ```bash
-   git clone https://github.com/your-repository-url-here.git
+   git clone https://github.com/mathiasschilling/AB-test-of-job-descriptions-using-personas-and-LLMs
    ```
    
 2. **Create a Virtual Environment (Optional):**
@@ -199,7 +73,7 @@ Replace 'your_private_api_key_from_openai' with the actual API key you obtained 
 
 Ensure that all installations are correct and packages are working as expected. You can run a simple Python script to check if the packages are imported correctly.
 
-Once you've completed these steps, you're ready to proceed with the usage of the project, detailed in the following sections.
+Once you've completed these steps, you're ready do use the jupyter notebook `01_personas_and_AB_test.ipynb` which is an example how to perform the A/B testing.
 
 
 ## Usage
@@ -221,7 +95,7 @@ In function `get_persona(idx)`, where `idx` is the index/persona, we create the 
 ### Setting Up Job Descriptions
 The cornerstone of this project is the comparison of different job descriptions to understand which are more effective in attracting the right candidates. Begin by drafting two versions of job descriptions for the same role: `job_description_A` as the control version (the current job description used) and `job_description_B` as the experimental version (with potentially more engaging and inclusive language, clearer role responsibilities, or other modifications). These descriptions should be reflective of the role's requirements and the organization's culture. The effectiveness of each description is later assessed through A/B testing, leveraging the unique perspectives of our generated personas.
 
-Example job descriptions are defined in the jupyter notebook.
+Example job descriptions are defined in the jupyter notebook `01_personas_and_AB_test.ipynb`.
 
 ### Prompting and Testing with LLMs
 Once personas and job descriptions are established, the next step involves interacting with LLMs to simulate how each persona would react to the job descriptions. This involves crafting prompts that summarize the job descriptions and the persona's profile, querying the LLM for its preference or reaction towards the descriptions.
