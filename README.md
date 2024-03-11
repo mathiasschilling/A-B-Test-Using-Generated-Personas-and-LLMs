@@ -18,7 +18,10 @@
 - [Author](#author)
 
 ## Introduction and Project Description
+
 In the evolving landscape of talent acquisition and job design, the utilization of advanced computational techniques, including Large Language Models (LLMs) and persona-based evaluation methods, allows for new approaches to optimizing job descriptions for various roles. This innovative methodology involves the creation of detailed personas, which encapsulate a wide range of candidate profiles, preferences, and competencies. These personas are then used in combinations with LLMs to assess and vote on job positions, determining which descriptions are more effective in attracting the right talent.
+
+This project allows fast and extensive comparison of job descriptions by A/B testing means using generated personas in combination with LLMs.
 
 ## Getting Started
 
@@ -144,6 +147,7 @@ Schilling, M. (2024). A/B Test of Job Descriptions Using Personas and LLMs. GitH
 
 ## Author
 
-This project was created by Mathias Schilling, a passionate algorithm developer and data scientist with a keen interest in applying technology to solve real-world problems. With a background in systems engineering, Mathias brings a unique perspective to the intersection of data science, applied machine learning, RAG and data-driven analysis and modeling. This project reflects his commitment to innovative approaches in optimizing recruitment processes and enhancing job matching through the power of Large Language Models (LLMs) and data-driven insights. 
+This project was created by Mathias Schilling, a passionate algorithm developer and data scientist with a keen interest in applying technology to solve real-world problems. With a background in systems engineering, Mathias brings a unique perspective to the intersection of data science, applied machine learning, RAG and data-driven analysis and modeling. This project reflects his commitment to innovative approaches in optimizing processes through the power of LLMs and data-driven insights.
+
 For any inquiries or collaborations, feel free to connect on [LinkedIn](https://ch.linkedin.com/in/mathias-schilling-3a9b1210b).
 
