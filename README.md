@@ -19,7 +19,9 @@
 
 ## Introduction and Project Description
 
-This project demonstates fast and extensive comparison and evaluation possibilities of two sets of content by A/B testing means using generated personas in combination with LLMs. As an example job descriptions are used and as personas, gratuates of different fields of study are created. Of course, the scope of such comparisons is not limited to job descriptions. With slight modifications, images such as landing sites can be compared quite easily, e.g. using GPT Vision.
+This project demonstates fast and extensive comparison and evaluation possibilities of two sets of content items `A` and `B` by A/B testing means using generated personas in combination with large language models (LLMs). For demonstration purposes, job descriptions are used. Fittingly, as for personas, gratuates of different fields of study are created. 
+
+Of course, the scope of such comparisons is not limited to job descriptions. With slight modifications, images such as landing sites and design choices can be compared quite easily and extensively, e.g. using GPT Vision.
 
 ## Getting Started
 
@@ -131,6 +133,10 @@ The Z-statistic represents the distance between the observed difference in propo
 **2. p-value:**
 
 The p-value helps us determine whether the observed differences are statistically significant. It represents the probability of obtaining test results at least as extreme as the ones observed during the test, assuming that the null hypothesis is true. In the context of an A/B test, a p-value less than 0.05 (common threshold) suggests that there is a statistically significant difference in preferences between the two versions tested, leading us to reject the null hypothesis (meaning the second job description is better).
+
+## Additional Remarks
+
+The A/B test surveys shall be conducted multiple times as the results obtained by the LLM of choice also tend to scatter. Personas without affiliation/opverlap to the tested content shall also be included in the surveys to test obtaining ambivalent results.
 
 ## License
 
