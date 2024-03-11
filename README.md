@@ -1,4 +1,4 @@
-# A/B Test Using Personas and LLMs
+# A/B Test Using Generated Personas and LLMs
 
 ## Table of Contents
 - [Introduction and Project Description](#introduction-and-project-description)
@@ -82,7 +82,10 @@ Once you've completed these steps, you're ready do use the jupyter notebook `01_
 ## Usage
 
 ### Creating Personas
-To create realistic and diverse personas, we use a combination of data sources, such as census data, academic records, and online surveys. We then apply natural language processing and clustering techniques to generate 100 personas of students from 5 fields of studies: machine technology, electronics engineering, data science, information technology, and industrial engineering. Each persona has the following attributes:
+
+Personas with different traits, skills and interests can be created using LLMs.
+
+Here, in order to create realistic and diverse personas, we generate 100 personas of students from 5 fields of studies: machine technology, electronics engineering, data science, information technology, and industrial engineering. Each persona has the following selected and reviewed attributes:
 
 - `name`: Randomly created names.
 - `study`: One of the five fields of studies mentioned above.
@@ -111,7 +114,7 @@ To systematically capture the preferences of our personas for job description A 
 
 ### Illustrating Votes by Studies
 
-After collecting votes from the personas on their preferred job descriptions, it's important to visualize and analyze these preferences across different fields of study. This step involves creating graphical representations, such as bar charts or pie charts, to illustrate how personas from different academic backgrounds (e.g., machine technology, electronics engineering, data science) voted. 
+After collecting votes from personas on their preferred job descriptions, it's important to visualize and analyze these preferences across different fields of study. This step involves creating graphical representations, to illustrate how personas from different academic backgrounds (e.g., machine technology, electronics engineering, data science) voted. 
 
 ![Illustration of the votes by fields of study of a demo survey.](demo_survey.png)
 
@@ -122,7 +125,7 @@ Such illustrations can reveal trends and patterns, highlighting which job descri
 ## A/B Testing
 
 ### Evaluation Methodology
-The evaluation methodology of the A/B testing relies on statistical analysis to measure the effectiveness of the two job description versions. Utilizing the `proportions_ztest` from the `statsmodels` package, this process compares the proportion of positive responses each job description receives from the personas. By setting a controlled environment where other variables are kept constant, this approach ensures that the observed differences in preferences are attributable to the variations in the job descriptions. This methodology is critical for making informed decisions based on empirical data rather than intuition.
+The evaluation methodology of the A/B testing relies on statistical analysis to measure the effectiveness of the two job description versions. Utilizing the `proportions_ztest` from the `statsmodels` package, this process compares the proportion of positive responses each job description receives from the personas. By setting a controlled environment where other variables are kept constant, this approach ensures that the observed differences in preferences are attributable to the variations in the job descriptions.
 
 ### Interpretation of Results
 
@@ -148,7 +151,7 @@ While not required, if you find this project helpful and wish to express your ap
 
 If you utilize this project in your research, development work, or in any other capacity, please consider citing it as follows:
 
-Schilling, M. (2024). A/B Test of Job Descriptions Using Personas and LLMs. GitHub. https://github.com/mathiasschilling/AB-test-of-job-descriptions-using-personas-and-LLMs
+Schilling, M. (2024). A/B Test Using Generated Personas and LLMs. GitHub. https://github.com/mathiasschilling/AB-test-of-job-descriptions-using-personas-and-LLMs
 
 ## Author
 
