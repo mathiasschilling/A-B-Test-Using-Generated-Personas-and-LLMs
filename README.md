@@ -162,3 +162,6 @@ This project was created by Mathias Schilling, a passionate algorithm developer 
 
 For any inquiries or collaborations, feel free to connect on [LinkedIn](https://ch.linkedin.com/in/mathias-schilling-3a9b1210b).
 
+## Acknowledgements
+
+Thank you [David Furrer](https://www.linkedin.com/in/david-furrer/) for creating the concise job description comparison. David is the Principal Course Instructor & Technical Lead at [gpttraining.ch](https://www.gpttraining.ch/). Check out his profile and course!
