@@ -139,7 +139,8 @@ The p-value helps us determine whether the observed differences are statisticall
 
 ## Additional Remarks
 
-The A/B test surveys shall be conducted multiple times as the results obtained by the LLM of choice also tend to scatter. Personas without affiliation/opverlap to the tested content shall also be included in the surveys to test obtaining ambivalent results.
+- The A/B test surveys shall be conducted multiple times (multi-shot surveys) as the results obtained by the LLM of choice also tend to scatter. Personas without affiliation/overlap to the tested content shall also be included in the surveys to test obtaining ambivalent results.
+- If the content is significantly different from each other in terms of votes, prompt an LLM to identify the differences which might have led to these results. In terms of job descriptions, those differences might be tied to responsibilities, required education, additional expertise and skills, working environment, benefits...
 
 ## License
 
