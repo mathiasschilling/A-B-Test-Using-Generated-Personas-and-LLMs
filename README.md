@@ -142,6 +142,8 @@ The p-value helps us determine whether the observed differences are statisticall
 - The A/B test surveys shall be conducted multiple times (multi-shot surveys) as the results obtained by the LLM of choice also tend to scatter. Personas without affiliation/overlap to the tested content shall also be included in the surveys to test obtaining ambivalent results.
 - If the content is significantly different from each other in terms of votes, prompt an LLM to identify the differences which might have led to these results. In terms of job descriptions, those differences might be tied to responsibilities, required education, additional expertise and skills, working environment, benefits...
 
+![Found differences in the example job descriptions.](demo_differences.png)
+
 ## License
 
 This project is made available under the terms of the MIT License. This means everyone is free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided they do so under the same license and give appropriate credit to the original author(s) of this project by referencing it in their work.
