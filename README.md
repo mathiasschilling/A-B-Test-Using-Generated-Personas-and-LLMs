@@ -16,6 +16,7 @@
   - [Interpretation of Results](#interpretation-of-results)
 - [License](#license)
 - [Author](#author)
+- [Acknowledgements](#acknowledgements)
 
 ## Introduction and Project Description
 
