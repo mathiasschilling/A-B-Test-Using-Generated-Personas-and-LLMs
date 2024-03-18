@@ -155,13 +155,13 @@ While not required, if you find this project helpful and wish to express your ap
 
 If you utilize this project in your research, development work, or in any other capacity, please consider citing it as follows:
 
-Schilling, M. (2024). A/B Test Using Generated Personas and LLMs. GitHub. https://github.com/mathiasschilling/AB-test-of-job-descriptions-using-personas-and-LLMs
+Schilling, M. (2024). A/B Test Using Generated Personas and LLMs. GitHub. https://github.com/mathiasschilling/A-B-Test-Using-Generated-Personas-and-LLMs
 
 ## Author
 
 This project was created by Mathias Schilling, a passionate algorithm developer and data scientist with a keen interest in applying technology to solve real-world problems. With a background in systems engineering, Mathias brings a unique perspective to the intersection of data science, applied machine learning, RAG and data-driven analysis and modeling. This project reflects his commitment to innovative approaches in optimizing processes through the power of LLMs and data-driven insights.
 
-For any inquiries or collaborations, feel free to connect on [LinkedIn](https://ch.linkedin.com/in/mathiasschilling).
+For any inquiries or collaborations, feel free to connect on [LinkedIn](https://ch.linkedin.com/in/mathias-schilling).
 
 ## Acknowledgements
 
