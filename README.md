@@ -161,7 +161,7 @@ Schilling, M. (2024). A/B Test Using Generated Personas and LLMs. GitHub. https:
 
 This project was created by Mathias Schilling, a passionate algorithm developer and data scientist with a keen interest in applying technology to solve real-world problems. With a background in systems engineering, Mathias brings a unique perspective to the intersection of data science, applied machine learning, RAG and data-driven analysis and modeling. This project reflects his commitment to innovative approaches in optimizing processes through the power of LLMs and data-driven insights.
 
-For any inquiries or collaborations, feel free to connect on [LinkedIn](https://ch.linkedin.com/in/mathias-schilling-3a9b1210b).
+For any inquiries or collaborations, feel free to connect on [LinkedIn](https://ch.linkedin.com/in/mathiasschilling).
 
 ## Acknowledgements
 
